@@ -15,16 +15,16 @@ There will be resources available in the Discord / GitHub for you to get help on
 
 # The opcode constants must match alu.sv
 
-ADD = 0x0 # OPCODE FOR ADD
-SUB = 0x  # OPCODE FOR SUB
-AND = 0x  # OPCODE FOR AND
-OR  = 0x  # OPCODE FOR OR
-XOR = 0x  # OPCODE FOR XOR
-NOT = 0x  # OPCODE FOR NOT
-SLL = 0x  # OPCODE FOR SLL
-SRL = 0x  # OPCODE FOR SRL
-SLT = 0x  # OPCODE FOR SLT
-EQ  = 0x  # OPCODE FOR EQ
+ADD = 0x0   # OPCODE FOR ADD
+SUB = None  # OPCODE FOR SUB
+AND = None  # OPCODE FOR AND
+OR  = None  # OPCODE FOR OR
+XOR = None  # OPCODE FOR XOR
+NOT = None  # OPCODE FOR NOT
+SLL = None  # OPCODE FOR SLL
+SRL = None  # OPCODE FOR SRL
+SLT = None  # OPCODE FOR SLT
+EQ  = None  # OPCODE FOR EQ
 
 VALID_OPCODES = [ADD, SUB, AND, OR, XOR, NOT, SLL, SRL, SLT, EQ]
 
@@ -107,7 +107,7 @@ async def check_alu(dut, a, b, opcode):
     # TODO: Calculate the expected result
     expected = None
 
-    # TODO: Read dut.out and convert it to a Python integer
+    # TODO: Read dut.result and convert it to a Python integer
     actual = None
 
     # TODO: Assert that actual equals expected
