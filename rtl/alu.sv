@@ -25,7 +25,7 @@ The combinational statement for the ADD operation is given. Fill in the rest.
 */
 
 always_comb begin
-    case (op)
+    case (opcode)
         4'h0: result = a + b;   // ADD
                                 // SUB
                                 // AND
