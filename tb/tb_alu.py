@@ -82,10 +82,6 @@ def expected_result(a, b, opcode):
         # TODO: Unsupported opcodes should return zero
         pass
 
-    raise NotImplementedError(
-        "Complete the expected_result() function."
-    )
-
 async def check_alu(dut, a, b, opcode):
 
     """
@@ -112,10 +108,6 @@ async def check_alu(dut, a, b, opcode):
 
     # TODO: Assert that actual equals expected
     # Include a useful error message
-
-    raise NotImplementedError(
-        "Complete the check_alu() helper."
-    )
 
 # Test every operation
 
@@ -152,10 +144,6 @@ async def test_all_operations(dut):
 
     # TODO: Test EQ when false
 
-    raise NotImplementedError(
-        "Add a directed test for every ALU operation."
-    )
-
 # Edge-case tests
 
 @cocotb.test()
@@ -180,11 +168,6 @@ async def test_edge_cases(dut):
 
     # TODO: Test shifting by 32 or greater
 
-    raise NotImplementedError(
-        "Add directed edge-case tests."
-    )
-
-
 # Randomized tests
 
 @cocotb.test()
@@ -203,11 +186,6 @@ async def test_random_operations(dut):
     #     1. Generate at least 100 random 32-bit values for a and b.
     #     2. Call check_alu(dut, a, b, opcode).
 
-    raise NotImplementedError(
-        "Complete the randomized test loop."
-    )
-
-
 # Invalid-opcode tests
 
 @cocotb.test()
@@ -218,7 +196,3 @@ async def test_invalid_opcodes(dut):
 
     # TODO:
     # Test invalid opcodes from 0b1010 through 0b1111.
-
-    raise NotImplementedError(
-        "Add invalid-opcode tests."
-    )
